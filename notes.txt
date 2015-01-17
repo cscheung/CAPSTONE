@@ -7,4 +7,7 @@ http://guides.rubyonrails.org/getting_started.html#creating-the-blog-application
 I initally had a weird issue when starting that said a node name couldn't be found.  Resolved it with this post:
 http://stackoverflow.com/questions/9654350/socketerror-getaddrinfo-name-or-service-not-known-sunspot-solr-rails-develo
 
+Starting the server with this command:
+	>rails server -b 127.0.0.1
+
 And I am using "127.0.0.1" instead of "localhost" for starting the server and for looking at it in my browser
