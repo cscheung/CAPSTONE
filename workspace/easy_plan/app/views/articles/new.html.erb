@@ -1,5 +1,13 @@
+<button onclick="accelerometer()">begin watching.</button>
+<p id="orientation">orientation: </p>
+<p id="accelerometer_x"></p>
+<p id="accelerometer_y"></p>
+<p id="accelerometer_z"></p>
+<p id="gyroscope_alpha"></p>
+<p id="gyroscope_beta"></p>
+<p id="gyroscope_gamma"></p>
 
-<h1>Testing Heading</h1>
+
 
 <%= form_for :article, url: articles_path do |f| %>
 <p>
@@ -15,17 +23,20 @@
 </p>
 <% end %>
 
-if (window.DeviceOrientationEvent) {
-    window.addEventListener("deviceorientation", function () {
-        tilt([event.beta, event.gamma]);
-    }, true);
-} else if (window.DeviceMotionEvent) {
-    window.addEventListener('devicemotion', function () {
-        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
-    }, true);
-} else {
-    window.addEventListener("MozOrientation", function () {
-        tilt([orientation.x * 50, orientation.y * 50]);
-    }, true);
-}
+<%
+#if (window.DeviceOrientationEvent) {
+#    window.addEventListener("deviceorientation", function () {
+#        tilt([event.beta, event.gamma]);
+#    }, true);
+#} else if (window.DeviceMotionEvent) {
+#    window.addEventListener('devicemotion', function () {
+#        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
+#    }, true);
+#} else {
+#    window.addEventListener("MozOrientation", function () {
+#        tilt([orientation.x * 50, orientation.y * 50]);
+#    }, true);
+#}
+%>
+
 
