@@ -14,23 +14,23 @@ function start_tracking()
     gyro.startTracking(function(o) 
         {
             document.getElementById("accelerometer_x").innerHTML = 
-            "accelerometer_x: " + Math.round(o.x);
+            "accelerometer_x: " + Number((o.x).toFixed(1));
             
             document.getElementById("accelerometer_y").innerHTML = 
-            "accelerometer_y: " + Math.round(o.y);
+            "accelerometer_y: " + Number((o.y).toFixed(1));
             
             document.getElementById("accelerometer_z").innerHTML = 
-            "accelerometer_z: " + Math.round(o.z);
+            "accelerometer_z: " + Number((o.z).toFixed(1));
     
              
             document.getElementById("gyroscope_alpha").innerHTML = 
-            "gyroscope_alpha: " + Math.round(o.alpha);
-            
+            "gyroscope_alpha: " + Number((o.alpha).toFixed(1));
+                        
             document.getElementById("gyroscope_beta").innerHTML = 
-            "gyroscope_beta: " + Math.round(o.beta);
+            "gyroscope_beta: " + Number((o.beta).toFixed(1));
             
             document.getElementById("gyroscope_gamma").innerHTML = 
-            "gyroscope_gamma: " + Math.round(o.gamma);
+            "gyroscope_gamma: " + Number((o.gamma).toFixed(1));
         }
     );
 }
