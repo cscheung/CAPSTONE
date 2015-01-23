@@ -1,0 +1,13 @@
+I used this guide to set up rails on Yosemite (OSX):
+http://railsapps.github.io/installrubyonrails-mac.html
+
+Currently following this guide to make a blank application:
+http://guides.rubyonrails.org/getting_started.html#creating-the-blog-application
+
+I initally had a weird issue when starting that said a node name couldn't be found.  Resolved it with this post:
+http://stackoverflow.com/questions/9654350/socketerror-getaddrinfo-name-or-service-not-known-sunspot-solr-rails-develo
+
+Starting the server with this command:
+	>rails s -b 0.0.0.0 -p 3000
+
+And I am using "127.0.0.1" instead of "localhost" for starting the server and for looking at it in my browser

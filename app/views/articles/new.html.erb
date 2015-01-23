@@ -1,0 +1,48 @@
+<button onclick="start_tracking()">Actively track values</button>
+<button onclick="stop_tracking()">Stop tracking</button>
+<button onclick="put_values_in_article()">Enter values</button>
+
+<div id="values">
+    <p id="orientation"></p>
+    <p id="accelerometer_x"></p>
+    <p id="accelerometer_y"></p>
+    <p id="accelerometer_z"></p>
+    <p id="gyroscope_alpha"></p>
+    <p id="gyroscope_beta"></p>
+    <p id="gyroscope_gamma"></p>
+</div>
+
+
+<%= form_for :article, url: articles_path do |f| %>
+    <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+    </p>
+    <p>
+        <%= f.label :text %><br>
+        <%= f.text_area :text %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Back' , articles_path %>
+
+<%
+#if (window.DeviceOrientationEvent) {
+#    window.addEventListener("deviceorientation", function () {
+#        tilt([event.beta, event.gamma]);
+#    }, true);
+#} else if (window.DeviceMotionEvent) {
+#    window.addEventListener('devicemotion', function () {
+#        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
+#    }, true);
+#} else {
+#    window.addEventListener("MozOrientation", function () {
+#        tilt([orientation.x * 50, orientation.y * 50]);
+#    }, true);
+#}
+%>
+
+
