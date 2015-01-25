@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
     end
 
     def new
+        @articlelist = Article.all
     end
     
     def edit
@@ -19,7 +20,7 @@ class ArticlesController < ApplicationController
         @article = Article.new (article_params)
         
         if @article.save
-            redirect_to @article
+            redirect_to '/articles/new'
         else
             render 'new'
         end

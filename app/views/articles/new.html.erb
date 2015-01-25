@@ -13,6 +13,7 @@
 </div>
 
 
+
 <%= form_for :article, url: articles_path do |f| %>
     <p>
         <%= f.label :title %><br>
@@ -27,22 +28,34 @@
     </p>
 <% end %>
 
+
+
+
+
 <%= link_to 'Back' , articles_path %>
 
-<%
-#if (window.DeviceOrientationEvent) {
-#    window.addEventListener("deviceorientation", function () {
-#        tilt([event.beta, event.gamma]);
-#    }, true);
-#} else if (window.DeviceMotionEvent) {
-#    window.addEventListener('devicemotion', function () {
-#        tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
-#    }, true);
-#} else {
-#    window.addEventListener("MozOrientation", function () {
-#        tilt([orientation.x * 50, orientation.y * 50]);
-#    }, true);
-#}
-%>
 
+<h1>Listing articles</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Text</th>
+        <th colspan="2"></th>
+    </tr>
+    
+    <% @articlelist.each do |article| %>
+
+    <tr>
+        <td><%= article.title %></td>
+        <td><%= article.text %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article_path(article),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %></td>
+
+    </tr>
+<% end %>
+</table>
 
