@@ -54,8 +54,6 @@ function put_values_in_article()
         "\n" +
         document.getElementById("accelerometer_z").innerHTML +
         "\n" +
-        document.getElementById("accelerometer_x").innerHTML +
-        "\n" +
         document.getElementById("gyroscope_alpha").innerHTML +
         "\n" +
         document.getElementById("gyroscope_beta").innerHTML +

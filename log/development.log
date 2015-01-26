@@ -12754,3 +12754,3233 @@ Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.23
 
 
 Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.62 at 2015-01-24 17:49:48 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 17:53:04 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 121ms (Views: 110.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:05 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.47.32 at 2015-01-24 17:53:06 -0800
+
+
+Started DELETE "/articles/40" for 169.231.47.32 at 2015-01-24 17:53:09 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OQzHjY4Jzia8sC3ocUwicoK3fwFQAjycdednCYWOm63Ja8CybZFYnkyFlbaYi9hXeWv7Gw7Nc23K7eWafQYbNg==", "id"=>"40"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 40]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 40]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 16ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 17:53:09 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/58" for 169.231.47.32 at 2015-01-24 17:53:12 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P0aHVWvjIFz6U8c+1IkM12m0A6Z/rZiAvX+zTmtN1JHPIYBqiHu25Apmf2A9TvbykmiHvCFi13ECdTHdk8VUCg==", "id"=>"58"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 58]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 58]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 17:53:12 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/57" for 169.231.47.32 at 2015-01-24 17:53:14 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zeaIh4s2j9Kwnu6/oLJsEP+V9vJFwLyewAAOGPDQw549gY+4aK4ZakCrVuFJdZY1BEly6BsP829/CoyLCFhDBQ==", "id"=>"57"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 57]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 57]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 17:53:14 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/59" for 169.231.47.32 at 2015-01-24 17:53:16 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kTINeQV78kA2x9K6gVSBL3+0G7yxo7lNC5Hx8UUunaVhVQpG5uNk+MbyauRok3sKhGifpu9s9ry0m3NivaYdPg==", "id"=>"59"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 59]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 59]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 17:53:16 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/56" for 169.231.47.32 at 2015-01-24 17:53:19 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0dVT+VAiCmrh8i/8KA9XPBgt2l3PO47EeEiipStt1IshslTGs7qc0hHHl6LByK0Z4/FeR5H0wTXHQiA20+VUEA==", "id"=>"56"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 56]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 56]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 17:53:19 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 17:53:20 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:00:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 109ms (Views: 99.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:40 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.32 at 2015-01-24 18:00:41 -0800
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:00:57 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tBV+vA6rDbDQrIGBLO0iPv5zs6qOSiJjylaFxAvxxb9EcnmD7TObCCCZOd/FKtgbBa83sNCFbZJ1XAdX83lFJA==", "article"=>{"title"=>"2015:01:24:18:00:51", "text"=>"\r\naccelerometer_x: -9.7\r\naccelerometer_y: 0\r\naccelerometer_z: -0.1\r\naccelerometer_x: -9.7\r\ngyroscope_alpha: 300.8\r\ngyroscope_beta: 179.5\r\ngyroscope_gamma: -89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:24:18:00:51"], ["text", "\r\naccelerometer_x: -9.7\r\naccelerometer_y: 0\r\naccelerometer_z: -0.1\r\naccelerometer_x: -9.7\r\ngyroscope_alpha: 300.8\r\ngyroscope_beta: 179.5\r\ngyroscope_gamma: -89.8"], ["created_at", "2015-01-25 02:00:57.534264"], ["updated_at", "2015-01-25 02:00:57.534264"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 62ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:00:57 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:01:27 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OIKvKFqpJ38A32s7Sr+ldB06PjOBWuN1M/dpHWxAPovI5agXuTGxx/Dq02WjeF9R5ua6Kd+VrISM/euOlMi+EA==", "article"=>{"title"=>"2015:01:24:18:01:02", "text"=>"\r\naccelerometer_x: -9.7\r\naccelerometer_y: -0.3\r\naccelerometer_z: 0\r\naccelerometer_x: -9.7\r\ngyroscope_alpha: 300.9\r\ngyroscope_beta: -178\r\ngyroscope_gamma: -89.2"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:24:18:01:02"], ["text", "\r\naccelerometer_x: -9.7\r\naccelerometer_y: -0.3\r\naccelerometer_z: 0\r\naccelerometer_x: -9.7\r\ngyroscope_alpha: 300.9\r\ngyroscope_beta: -178\r\ngyroscope_gamma: -89.2"], ["created_at", "2015-01-25 02:01:27.218710"], ["updated_at", "2015-01-25 02:01:27.218710"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 63ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:01:27 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:13:12 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 106ms (Views: 96.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.47.32 at 2015-01-24 18:13:13 -0800
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:13:18 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:13:29 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mu9e6uWJvjTbIisWfrg8VcPxXPqS4sp1rG/eCtQNJbXCiFnVBhEojCsXk0iXf8ZwOC3Y4MwthYQTZVyZLIWlLg==", "article"=>{"title"=>"2015:01:24:18:13:24", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.2\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 226\r\ngyroscope_beta: -178.6\r\ngyroscope_gamma: 89.7"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:24:18:13:24"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.2\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 226\r\ngyroscope_beta: -178.6\r\ngyroscope_gamma: 89.7"], ["created_at", "2015-01-25 02:13:29.886685"], ["updated_at", "2015-01-25 02:13:29.886685"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 72ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:13:29 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:13:47 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:13:48 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:14:12 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q42WJz03akMBa15J5s9oUvdujX7UT2gK6Vgz87zprAez6pEY3q/8+/Fe5hcPCJJ3DLIJZIqAJ/tWUrFgRGEsnA==", "article"=>{"title"=>"2015:01:24:18:14:06", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.3\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 256.7\r\ngyroscope_beta: -178.3\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:24:18:14:06"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.3\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 256.7\r\ngyroscope_beta: -178.3\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-25 02:14:12.447478"], ["updated_at", "2015-01-25 02:14:12.447478"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:14:12 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/60" for 169.231.47.32 at 2015-01-24 18:15:50 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m6DNgCz1uBuTtFhw+YTpBRm5407ILYbszGzIkUAnB8Brx8q/z20uo2OB4C4QQxMg4mVnVJbiyR1zZkoCuK+HWw==", "id"=>"60"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 60]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 60]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:15:50 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:15:59 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/61" for 169.231.47.32 at 2015-01-24 18:16:02 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Cyy3vBnE1RRpwKJixcgbAxbCyR3CSGQ+REfC2W604VD7S7CD+lxDrJn1GjwsD+Em7R5NB5yHK8/7TUBKljxhyw==", "id"=>"61"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 61]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 61]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:16:02 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/62" for 169.231.47.32 at 2015-01-24 18:16:05 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0ZZZsGRTLEcMX5+nJY9bLRZJB7oYQuejzy+ef41m0ngh8V6Ph8u6//xqJ/nMSKEI7ZWDoEaNqFJwJRzsde5S4w==", "id"=>"62"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 62]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 62]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:16:05 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/63" for 169.231.47.32 at 2015-01-24 18:16:09 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fYChg1gF/E+QfVlEgyzvv2vrx2G/lEybvon1HBbgLUaN56a8u51q92BI4Rpq6xWakDdDe+FbA2oBg3eP7mit3Q==", "id"=>"63"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 63]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 63]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.62:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.47.32 at 2015-01-24 18:16:09 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:16:11 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:16:29 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HcXaGGpgr2LCDiyvbwrEULRDJbZCzFdyr6vTbyxosh/tot0nifg52jI7lPGGzT51T5+hrBwDGIMQoVH81OAyhA==", "article"=>{"title"=>"2015:01:24:18:16:21", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 200.6\r\ngyroscope_beta: 179\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:24:18:16:21"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 200.6\r\ngyroscope_beta: 179\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-25 02:16:29.970470"], ["updated_at", "2015-01-25 02:16:29.970470"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 87ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:16:30 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:16:41 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iZqdXWs0XjuUklwlZgVNUiqSlhCE+VXdKIcAZvl0a6d5/ZpiiKzIg2Sn5HuPwrd30U4SCto2GiyXjYL1AfzrPA==", "article"=>{"title"=>"2015:01:24:18:16:36", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 46.4\r\ngyroscope_beta: -0.4\r\ngyroscope_gamma: -89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:24:18:16:36"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 46.4\r\ngyroscope_beta: -0.4\r\ngyroscope_gamma: -89.8"], ["created_at", "2015-01-25 02:16:41.851473"], ["updated_at", "2015-01-25 02:16:41.851473"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 106ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:16:42 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:16:53 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CB/chebj/D2pUnpw/q2eAI2ej1xcRckr7h6VsQxDlUL4eNu6BXtqhVlnwi4XamQldkILRgKKhtpRFBci9MsV2Q==", "article"=>{"title"=>"2015:01:24:18:16:47", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 44.1\r\ngyroscope_beta: -0.5\r\ngyroscope_gamma: -90"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:24:18:16:47"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 44.1\r\ngyroscope_beta: -0.5\r\ngyroscope_gamma: -90"], ["created_at", "2015-01-25 02:16:53.154690"], ["updated_at", "2015-01-25 02:16:53.154690"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 96ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:16:53 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.32 at 2015-01-24 18:17:05 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z0ZB41ETr+7yaIJJXSpvqiKpN8dD2A+vYNZACcO0EOs/IUbcsos5VgJdOhe07ZWP2XWz3R0XQF7f3MKaOzyQcA==", "article"=>{"title"=>"2015:01:24:18:17:00", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 255.3\r\ngyroscope_beta: -179.9\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:24:18:17:00"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 255.3\r\ngyroscope_beta: -179.9\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-25 02:17:05.709379"], ["updated_at", "2015-01-25 02:17:05.709379"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.62:3000/articles/new
+Completed 302 Found in 41ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles/new" for 169.231.47.32 at 2015-01-24 18:17:05 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.231.13.155 at 2015-01-25 17:19:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (1.9ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 266ms (Views: 251.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:19:41 -0800
+
+
+Started DELETE "/articles/64" for 169.231.13.155 at 2015-01-25 17:19:43 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qeUVwrrvlzx4ziO4BGYNuwrujiTMrN7D14Jf+dMit+udaa2tBnyImNK2+2RsUdEtSVKOKwiKhD5anI2kjOqLtg==", "id"=>"64"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 64]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 64]]
+  [1m[35m (6.2ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 18ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:19:43 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/66" for 169.231.13.155 at 2015-01-25 17:19:45 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IkFLdZFCKMo7coQ7hF+rftBbtUwRDxhpuCuDy+lYXlAWzfMaLdE3bpEKXOfsaHfok+e1Q9UpQpQ1NVGWtpBiDQ==", "id"=>"66"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 66]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:19:45 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/65" for 169.231.13.155 at 2015-01-25 17:19:46 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7V7i6YnSD8b+n+tkPzciGAMcHMeWjchuIcL/MDdZMyXZ0lqGNUEQYlTnM7hXAP6OQKAcyFKrkpOs3C1taJEPeA==", "id"=>"65"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 65]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 65]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:19:46 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/67" for 169.231.13.155 at 2015-01-25 17:19:47 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iIBn2tHPz8/VflPFN1AdvOJo3CX2ZV96oUaUpvjSsc28DN+1bVzQa38GixlfZ8EqodTcKjJDBYcsWEb7pxqNkA==", "id"=>"67"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 67]]
+  [1m[36m (141.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 145ms (ActiveRecord: 142.8ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:19:47 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.47.214 at 2015-01-25 17:20:09 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:20:12 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:20:24 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YoKWM8JQqTj9CzF+nTceMrEZiAUBGDKpgSFpgdx0OzJSwpZ3uGiyMwJSn1qpuRZzAZdFzpaQbJ2JP6eCnH2kyQ==", "article"=>{"title"=>"2015:01:25:17:20:18", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 195.1\r\ngyroscope_beta: -179.2\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (82.7ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:17:20:18"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 195.1\r\ngyroscope_beta: -179.2\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 01:20:24.661916"], ["updated_at", "2015-01-26 01:20:24.661916"]]
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 104ms (ActiveRecord: 96.9ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:20:24 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:20:57 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4qI4wOuki3WKdC5OdagUnRPnYST1d4Tp+GM+rjRwvbXS4jiEkZyQfnUtgGpBJhzco2ms72L/2t3wffCtdHkiTg==", "article"=>{"title"=>"2015:01:25:17:20:48", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 352.2\r\ngyroscope_beta: 179.3\r\ngyroscope_gamma: 89.7"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:17:20:48"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 352.2\r\ngyroscope_beta: 179.3\r\ngyroscope_gamma: 89.7"], ["created_at", "2015-01-26 01:20:57.542710"], ["updated_at", "2015-01-26 01:20:57.542710"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 3399ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:21:01 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:21:13 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RQfricnLMqIKwHvRSiytD9b6+A0EhWBVFOXzhXv+TuJ1R+vNs/MpqfWZ1fV+oqVOZnQ1xpMNPmEc+z2GO/fRGQ==", "article"=>{"title"=>"2015:01:25:17:21:07", "text"=>"\r\naccelerometer_x: 9.7\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.7\r\ngyroscope_alpha: 86.8\r\ngyroscope_beta: -0.9\r\ngyroscope_gamma: -89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:17:21:07"], ["text", "\r\naccelerometer_x: 9.7\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.7\r\ngyroscope_alpha: 86.8\r\ngyroscope_beta: -0.9\r\ngyroscope_gamma: -89.8"], ["created_at", "2015-01-26 01:21:13.422713"], ["updated_at", "2015-01-26 01:21:13.422713"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 7719ms (ActiveRecord: 2.5ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:21:21 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RQfricnLMqIKwHvRSiytD9b6+A0EhWBVFOXzhXv+TuJ1R+vNs/MpqfWZ1fV+oqVOZnQ1xpMNPmEc+z2GO/fRGQ==", "article"=>{"title"=>"2015:01:25:17:21:07", "text"=>"\r\naccelerometer_x: 9.7\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.7\r\ngyroscope_alpha: 86.8\r\ngyroscope_beta: -0.9\r\ngyroscope_gamma: -89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:17:21:07"], ["text", "\r\naccelerometer_x: 9.7\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.7\r\ngyroscope_alpha: 86.8\r\ngyroscope_beta: -0.9\r\ngyroscope_gamma: -89.8"], ["created_at", "2015-01-26 01:21:21.149307"], ["updated_at", "2015-01-26 01:21:21.149307"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 10093ms (ActiveRecord: 3.5ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:21:31 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RQfricnLMqIKwHvRSiytD9b6+A0EhWBVFOXzhXv+TuJ1R+vNs/MpqfWZ1fV+oqVOZnQ1xpMNPmEc+z2GO/fRGQ==", "article"=>{"title"=>"2015:01:25:17:21:07", "text"=>"\r\naccelerometer_x: 9.7\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.7\r\ngyroscope_alpha: 86.8\r\ngyroscope_beta: -0.9\r\ngyroscope_gamma: -89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:17:21:07"], ["text", "\r\naccelerometer_x: 9.7\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\naccelerometer_x: 9.7\r\ngyroscope_alpha: 86.8\r\ngyroscope_beta: -0.9\r\ngyroscope_gamma: -89.8"], ["created_at", "2015-01-26 01:21:31.248497"], ["updated_at", "2015-01-26 01:21:31.248497"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 10093ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:21:41 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:22:06 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"drgxOq6Y7/51aMcDtKFxG/eI6VAPFdLVF1a7vP6q93tG+DF+1KD09YoxaSeAL3laRwYkm5idjOEfSHW/vqNogA==", "article"=>{"title"=>"2015:01:25:17:22:00", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 312.1\r\ngyroscope_beta: 179.9\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:17:22:00"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 312.1\r\ngyroscope_beta: 179.9\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 01:22:06.643893"], ["updated_at", "2015-01-26 01:22:06.643893"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 4996ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:22:12 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 17:23:01 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 75ms (Views: 74.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/68" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 68]]
+  Rendered articles/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 187ms (Views: 155.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:06 -0800
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:13 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/articles/68" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+r07VpA1Ey++CNmWr7YA4Q5LUeg/5q38JnjUzBjHOrjOMYM5LKYMixRwAUrHgdx3TfdR5/vA9wGrZgaRRw8G5Q==", "id"=>"68"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 68]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 68]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:15 -0800
+
+
+Started DELETE "/articles/69" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uFR2qweubjcGq48rVfeBgFAjc3x7wxAx+ZkXrSEft8uM2M7Euz1xk6zTV/c9wF0WE59zc7/lSsx0h8XwfteLlg==", "id"=>"69"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 69]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 69]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:16 -0800
+
+
+Started DELETE "/articles/70" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/qcdyH2PDZaRFKACbY0BqBhI9LHmXK8Ro6QnyoycjSrKK6WnwRwSMjtseN4Fut0+W/T0viJ69ewuuvWX01Sxdw==", "id"=>"70"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 70]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 70]]
+  [1m[36m (139.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 141ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:17 -0800
+
+
+Started GET "/articles/71" for 169.231.13.155 at 2015-01-25 17:28:18 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 71]]
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:19 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:20 -0800
+
+
+Started DELETE "/articles/71" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h8GjgGmSzHYLDdK8T7EI2aqsLGLTmpXB0yE5teWI9LyzTRvv1QHT0qF1CmAnhtRP6RAsbRe8zzxeP+voukDI4Q==", "id"=>"71"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 71]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 71]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:22 -0800
+
+
+Started DELETE "/articles/72" for 169.231.13.155 at 2015-01-25 17:28:23 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7Cz05KClaTg4A/wnz6kaU6AKIN93PssFKKozQWEU3+rYoEyLHDZ2nJJ7JPunnsbF47Yg0LMYkfiltOEcPtzjtw==", "id"=>"72"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 72]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 72]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:23 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+
+
+Started DELETE "/articles/73" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ldIFPBbk5k5MKOg68MMmV3q1/69wUxY6C5n+iljWZQmhXr1Tqnf56uZQMOaY9PrBOQn/oLR1TMeGhyzXBx5ZVA==", "id"=>"73"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 73]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 73]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:24 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:25 -0800
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:28:26 -0800
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 17:28:27 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (113.7ms)
+Completed 200 OK in 177ms (Views: 176.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:28:49 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:29:14 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBag5W10OAyUckhJwmAP+TKNaNWabfT5n+HnneRXuxU4VqChF0wjB2sr5m327ge4ggOlHg3lqs2X/ymepF4k7g==", "article"=>{"title"=>"2015:01:25:17:29:07", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.2\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 108.3\r\ngyroscope_beta: -179.2\r\ngyroscope_gamma: 89.6"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:17:29:07"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.2\r\naccelerometer_z: 0\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 108.3\r\ngyroscope_beta: -179.2\r\ngyroscope_gamma: 89.6"], ["created_at", "2015-01-26 01:29:14.161073"], ["updated_at", "2015-01-26 01:29:14.161073"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 75ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:29:14 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 54.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:29:26 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"COWC31R3EB82HeZGFQhynHIxF6hao7eaiRY1tSZ/42E4pYKbLk8LFMlESGIhhnrdwr/aY80r6a6BCPu2ZnZ8mg==", "article"=>{"title"=>"2015:01:25:17:29:19", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 236\r\ngyroscope_beta: 179.7\r\ngyroscope_gamma: 89.1"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:17:29:19"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 236\r\ngyroscope_beta: 179.7\r\ngyroscope_gamma: 89.1"], ["created_at", "2015-01-26 01:29:26.753367"], ["updated_at", "2015-01-26 01:29:26.753367"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 73ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:29:26 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:29:45 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c4Q1nMl9yrJedJpGfMuuWu3HDlTCjl4Svw+8FgSeqTdDxDXYs0XRuaEtNGJIRaYbXUnDn1UGACa3EXIVRJc2zA==", "article"=>{"title"=>"2015:01:25:17:29:39", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 0.7\r\ngyroscope_beta: -179.4\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:17:29:39"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 0.7\r\ngyroscope_beta: -179.4\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-26 01:29:45.801680"], ["updated_at", "2015-01-26 01:29:45.801680"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 6225ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:29:52 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 254ms (Views: 253.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 17:30:16 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ErXWoGD8mzsVfRdllwi3ecot+NO0ZUhTwwRx9TnsE/ki9dbkGsSAMOokuUGjhr84eqM1GCPtFmfLGr/2eeWMAg==", "article"=>{"title"=>"2015:01:25:17:30:09", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 307\r\ngyroscope_beta: -179.4\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:17:30:09"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\naccelerometer_x: 9.8\r\ngyroscope_alpha: 307\r\ngyroscope_beta: -179.4\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 01:30:16.725469"], ["updated_at", "2015-01-26 01:30:16.725469"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 9100ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:30:25 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 17:32:01 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:32:01 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 17:32:01 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 17:32:01 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:01 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:02 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:10 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:10 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:10 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:10 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:10 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 169.231.13.155 at 2015-01-25 17:32:10 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:44:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 253ms (Views: 241.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.214 at 2015-01-25 17:44:48 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 17:50:17 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 17:50:18 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 17:50:18 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:42:56 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 123ms (Views: 122.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 18:42:57 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 18:42:57 -0800
+
+
+Started DELETE "/articles/74" for 169.231.47.214 at 2015-01-25 18:43:51 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"S2ZPnPxPy+iLkoNYIChOTfTuOZacnlyvuda9Z0/hmat7Jk/YhnfQ43TLLXwUpkYMRGD0XQsWApuxyHNkD+gGUA==", "id"=>"74"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 74]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 74]]
+  [1m[35m (3.8ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 18ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/articles" for 169.231.47.214 at 2015-01-25 18:43:52 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/75" for 169.231.47.214 at 2015-01-25 18:44:10 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iXIWowteCMcVcGgmKihhTj5uSnXVO/rLbVZ1vlUE2WW5MhbncWYTzOopxgIepmkPjuCHvkKzpP9lSLu9FQ1Gng==", "id"=>"75"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 75]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 75]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.47.214 at 2015-01-25 18:44:10 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/76" for 169.231.47.214 at 2015-01-25 18:44:13 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"N11pZAWwj6PQtAVHFh8kcHXrkd7cmmVwcQAq1Bg4BQkHHWkgf4iUqC/tq2MikSwxxWVcFUsSO0R5HuTXWDGa8g==", "id"=>"76"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 76]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles" for 169.231.47.214 at 2015-01-25 18:44:13 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/77" for 169.231.47.214 at 2015-01-25 18:44:15 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yIT9I+tbSTGdZVMkekeHplkObaUIMRHm8LwD5zIMsZX4xP1nkWNSOmI8/QBOyY/n6YCgbp+5T9L4os3kcgUubg==", "id"=>"77"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 77]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 77]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/articles" for 169.231.47.214 at 2015-01-25 18:44:15 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:44:17 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:44:28 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xkDFg9KOs0trU1DK4TTWzHnGHBaFRZqrVJD7ioKTjtz2AMXHqLaoQJQK/u7Vut6NyUjR3RLNxJ9cjjWJwpoRJw==", "article"=>{"title"=>"2015:01:25:18:44:22", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 187.1\r\ngyroscope_beta: -179.3\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:44:22"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 187.1\r\ngyroscope_beta: -179.3\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 02:44:28.517439"], ["updated_at", "2015-01-26 02:44:28.517439"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 82ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:44:28 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:44:34 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bAH2NDEmGRYFOgFklWq+9I8wfWuFZ25p1FVOecUUiN1cQfZwSx4CHfpjr0Ch5La1P76woBLvMF3cS4B6hR0XJg==", "article"=>{"title"=>"2015:01:25:18:44:28", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.2\r\naccelerometer_z: 0\r\ngyroscope_alpha: 193.5\r\ngyroscope_beta: -179.1\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:44:28"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.2\r\naccelerometer_z: 0\r\ngyroscope_alpha: 193.5\r\ngyroscope_beta: -179.1\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-26 02:44:34.558347"], ["updated_at", "2015-01-26 02:44:34.558347"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 39ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:44:34 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:44:39 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OoPh96TTAdQwEvpDn6GlfsoXOSUbXijp84CW9Me+KUoKw+Gz3usa389LVGerL60/epn07ozWdt37nlj3h7e2sQ==", "article"=>{"title"=>"2015:01:25:18:44:33", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 176.3\r\ngyroscope_beta: -179\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:44:33"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 176.3\r\ngyroscope_beta: -179\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-26 02:44:39.473822"], ["updated_at", "2015-01-26 02:44:39.473822"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 21ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:44:39 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:44:44 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xIMqQILsCjcrqKMkuTiRXUEXYUjhJAnE+Vej0Z4pBUH0wyoE+NQRPNTxDQCNtpkc8Zmsg3asV/DxSW3S3iCaug==", "article"=>{"title"=>"2015:01:25:18:44:38", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 191.2\r\ngyroscope_beta: -179.2\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:44:38"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 191.2\r\ngyroscope_beta: -179.2\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-26 02:44:44.489149"], ["updated_at", "2015-01-26 02:44:44.489149"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 14ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:44:44 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 18:45:10 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:11 -0800
+
+
+Started POST "/articles" for 169.231.13.155 at 2015-01-25 18:45:40 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WpngQqj+s6gnyRhwEzGa5uQSN1Xz/uTXJMDRWEFooRZuFVgtFG2sDI2xwKx7BkZwp643WjfYviqp3gMFHqCdSw==", "article"=>{"title"=>"--", "text"=>""}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "--"], ["text", ""], ["created_at", "2015-01-26 02:45:40.435055"], ["updated_at", "2015-01-26 02:45:40.435055"]]
+  [1m[36m (364.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 368ms (ActiveRecord: 365.1ms)
+
+
+Started POST "/articles" for 169.231.13.155 at 2015-01-25 18:45:40 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WpngQqj+s6gnyRhwEzGa5uQSN1Xz/uTXJMDRWEFooRZuFVgtFG2sDI2xwKx7BkZwp643WjfYviqp3gMFHqCdSw==", "article"=>{"title"=>"--", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "--"], ["text", ""], ["created_at", "2015-01-26 02:45:40.808784"], ["updated_at", "2015-01-26 02:45:40.808784"]]
+  [1m[35m (7.7ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 97ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 18:45:40 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:41 -0800
+
+
+Started DELETE "/articles/83" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fBKrlJ45lqU+qFzAGwk7kLI537aFDbI0fqt4ZZc3WKdInhP7IqqJAZTQhBxzPucG8YXfuUEr6Mnztao4yP9k+g==", "id"=>"83"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 83]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 83]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:45:44 -0800
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:46:00 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkAOBEnjUUjS82OPp7KROU+K1kmZTVA6cZ6HiVtH3t3+AA5AM9tKQy2qzauTPJl4/wQbgg7FDg55gEmKG05BJg==", "article"=>{"title"=>"2015:01:25:18:45:55", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 1.1\r\ngyroscope_beta: -179.7\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:18:45:55"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 1.1\r\ngyroscope_beta: -179.7\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 02:46:00.891893"], ["updated_at", "2015-01-26 02:46:00.891893"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:46:00 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:46:06 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1nq26nvwkgRb8T+efSMG8IWa1+YLg54eICB1ZQZTVl/mOrauAciJD6SokbpJrQ6xNRQaLZwLwCooPrtmRlrJpA==", "article"=>{"title"=>"2015:01:25:18:46:00", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 1.6\r\ngyroscope_beta: -179.6\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:18:46:00"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 1.6\r\ngyroscope_beta: -179.6\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 02:46:06.306286"], ["updated_at", "2015-01-26 02:46:06.306286"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 95ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:46:06 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:46:11 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XhPhjQ2iRYMb/Ty95l0fUNXlNuuzEr2Lwf0pp9SftLJuU+HJd5peiOSkkpnS0xcRZWv7ICSa47/J4+eklJYrSQ==", "article"=>{"title"=>"2015:01:25:18:46:05", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 1.3\r\ngyroscope_beta: -179.7\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:18:46:05"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 1.3\r\ngyroscope_beta: -179.7\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-26 02:46:11.324629"], ["updated_at", "2015-01-26 02:46:11.324629"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 75ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:46:11 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 18:46:17 -0800
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 18:51:10 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.13.155 at 2015-01-25 18:51:15 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mpxh+4gjojy4dIEiXRBllyOJAwTqZVMKZyvD66pot5cGENmUNLC9mBIMWf41J7kBYDUDCy5DCffqNRG29aCLyg==", "article"=>{"title"=>"--", "text"=>""}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "--"], ["text", ""], ["created_at", "2015-01-26 02:51:15.920495"], ["updated_at", "2015-01-26 02:51:15.920495"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 5ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 18:51:15 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9310ms (Views: 9309.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:25 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:35 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:35 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:35 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 18:51:35 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 18:55:26 -0800
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:55:45 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ysnIf2mxSzg/OAzNK6Wm/dr6w6Phiq2aUSjCAqgpSyb6icg7E4lQM8BhoukfK668anQOaHYC865ZNgwB6CDU3Q==", "article"=>{"title"=>"2015:01:25:18:55:39", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.8\r\ngyroscope_beta: 179.7\r\ngyroscope_gamma: 89.6"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:55:39"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.8\r\ngyroscope_beta: 179.7\r\ngyroscope_gamma: 89.6"], ["created_at", "2015-01-26 02:55:45.370166"], ["updated_at", "2015-01-26 02:55:45.370166"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 13ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:55:45 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:55:50 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fe/ZJc35B+mgEAFyZUHBTcBse5O1tHm676Xv8qb3jUBNr9lht8Ec4l9Jr1ZRz8kMcOK2WCI8J47nuyHx5v4Suw==", "article"=>{"title"=>"2015:01:25:18:55:45", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.3\r\ngyroscope_beta: 179.5\r\ngyroscope_gamma: 89.9"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:55:45"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.3\r\ngyroscope_beta: 179.5\r\ngyroscope_gamma: 89.9"], ["created_at", "2015-01-26 02:55:50.794479"], ["updated_at", "2015-01-26 02:55:50.794479"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 90ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:55:50 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:55:56 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"21DLWOFUVjQArJgZhpG7aqMRZ6k5xIWTgAIjytfg/GfrEMscm2xNP//1Nj2yH7MrE5+qYq5M26eIHO3Jl+ljnA==", "article"=>{"title"=>"2015:01:25:18:55:50", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.1\r\ngyroscope_beta: 179.7\r\ngyroscope_gamma: 89.2"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:55:50"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.1\r\ngyroscope_beta: 179.7\r\ngyroscope_gamma: 89.2"], ["created_at", "2015-01-26 02:55:56.385427"], ["updated_at", "2015-01-26 02:55:56.385427"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 97ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:55:56 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:56:05 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LeXMVI0P6Zg3aKxr0CMcXCRTtTNcGLwbT5pWtiLdScsdpcwQ9zfyk8gxAk/krRQdlN14+MuQ4i9HhJi1YtTWMA==", "article"=>{"title"=>"2015:01:25:18:56:00", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.3\r\ngyroscope_beta: 179.6\r\ngyroscope_gamma: 89.6"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:56:00"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: 0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 228.3\r\ngyroscope_beta: 179.6\r\ngyroscope_gamma: 89.6"], ["created_at", "2015-01-26 02:56:05.647615"], ["updated_at", "2015-01-26 02:56:05.647615"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 35ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:56:05 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:56:35 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZgHnOP5gmECNS28Kr44tXjNzkcdvri6++NDvrGH/P6NWQed8hFiDS3ISwS6bACUfg/1cDPgmcIrwziGvIfagWA==", "article"=>{"title"=>"--", "text"=>"\r\n\r\n\r\n\r\n\r\n\r\n"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "--"], ["text", "\r\n\r\n\r\n\r\n\r\n\r\n"], ["created_at", "2015-01-26 02:56:35.646089"], ["updated_at", "2015-01-26 02:56:35.646089"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 5ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:56:35 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:57:00 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RKb/FcOae7Wg0E6Z9gNMlJz4rTETXtz7pICkrMKwWTZUpu4LTZy5Sna7x5TVgVz4v0vf1PFJUfmjMyR8wNenw==", "article"=>{"title"=>"2015:01:25:18:56:55", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 307.2\r\ngyroscope_beta: -179.5\r\ngyroscope_gamma: 89.7"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:56:55"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 307.2\r\ngyroscope_beta: -179.5\r\ngyroscope_gamma: 89.7"], ["created_at", "2015-01-26 02:57:00.837193"], ["updated_at", "2015-01-26 02:57:00.837193"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 42ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:57:00 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:57:10 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C0x4s7Cd4Rpw/zDp4G1pCUYnWYgjBTZE0MDR21y2g/s7DHj3yqX6EY+mns3U42FI9qmUQ7SNaHDY3h/YHL8cAA==", "article"=>{"title"=>"2015:01:25:18:57:05", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 307.6\r\ngyroscope_beta: -179.8\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:57:05"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 307.6\r\ngyroscope_beta: -179.8\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 02:57:10.875039"], ["updated_at", "2015-01-26 02:57:10.875039"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 9ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:57:10 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:57:15 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVJ3/Mj/nZ2KgGAf9mxY3/1O5M25nQH8d3tBb6m/f3ldEne4sseGlnXZzjvC4lCeTcApBi4VX8h/ZY9s6bbggg==", "article"=>{"title"=>"2015:01:25:18:57:09", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 307.8\r\ngyroscope_beta: -179.6\r\ngyroscope_gamma: 89.8"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:57:09"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: -0.1\r\ngyroscope_alpha: 307.8\r\ngyroscope_beta: -179.6\r\ngyroscope_gamma: 89.8"], ["created_at", "2015-01-26 02:57:15.752097"], ["updated_at", "2015-01-26 02:57:15.752097"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 28ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:57:15 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 169.231.47.214 at 2015-01-25 18:57:20 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S11Xj9YS3XQ7hW/4A7IlFyMxh+k7+UBD3TLqMy+cq3V7HVfLrCrGf8Tcwdw3PC1Wk79KIqxxHnfVLCQwb5U0jg==", "article"=>{"title"=>"2015:01:25:18:57:14", "text"=>"\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 307.4\r\ngyroscope_beta: -179.6\r\ngyroscope_gamma: 90"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2015:01:25:18:57:14"], ["text", "\r\naccelerometer_x: 9.8\r\naccelerometer_y: -0.1\r\naccelerometer_z: 0\r\ngyroscope_alpha: 307.4\r\ngyroscope_beta: -179.6\r\ngyroscope_gamma: 90"], ["created_at", "2015-01-26 02:57:20.213041"], ["updated_at", "2015-01-26 02:57:20.213041"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 67ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 18:57:20 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 18:58:16 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:58:16 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:58:16 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:58:16 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:16 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:16 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:24 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:24 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:24 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:24 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:24 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 18:58:24 -0800
+
+
+Started POST "/articles" for 169.231.13.155 at 2015-01-25 18:59:07 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GnCHHmDqqNVidpapdqu5gjmShYmH6xzDHEb7a3o/VrMu/D9x3Hm3ccgOTnUenGUUei6FhkPNRj6RWCk2Jfdq7g==", "article"=>{"title"=>"--", "text"=>""}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "--"], ["text", ""], ["created_at", "2015-01-26 02:59:07.850957"], ["updated_at", "2015-01-26 02:59:07.850957"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles/new
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 18:59:07 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 18:59:08 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 19:10:44 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/78" for 169.231.13.155 at 2015-01-25 19:17:58 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"78"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 78]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 78]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:17:58 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/78" for 169.231.13.155 at 2015-01-25 19:18:03 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"78"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 78]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=78):
+  app/controllers/articles_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (99.6ms)
+
+
+Started DELETE "/articles/78" for 169.231.13.155 at 2015-01-25 19:18:04 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"78"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 78]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=78):
+  app/controllers/articles_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (9889.7ms)
+
+
+Started DELETE "/articles/78" for 169.231.13.155 at 2015-01-25 19:18:14 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"78"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 78]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=78):
+  app/controllers/articles_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (9891.9ms)
+
+
+Started DELETE "/articles/78" for 169.231.13.155 at 2015-01-25 19:18:24 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"78"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 78]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=78):
+  app/controllers/articles_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (94.6ms)
+
+
+Started DELETE "/articles/79" for 169.231.13.155 at 2015-01-25 19:18:44 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"79"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 79]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 79]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 19:18:44 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/79" for 169.231.13.155 at 2015-01-25 19:18:54 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"79"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 79]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=79):
+  app/controllers/articles_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/thetomcraig/.rvm/gems/ruby-2.2.0@global/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (9906.5ms)
+
+
+Started DELETE "/articles/84" for 169.231.13.155 at 2015-01-25 19:19:04 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"84"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 84]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 84]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.3ms)
+
+
+Started DELETE "/articles/87" for 169.231.13.155 at 2015-01-25 19:19:04 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3h1DTbLJ2LbWtIaS2Qfy7QHZm/11aSAbA2OSnIS5f1T9M1iilg4xnEiCsYjU8Nd97tmYDHz/n3hE1wXLdrZoA==", "id"=>"87"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 87]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 87]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 97ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 169.231.13.155 at 2015-01-25 19:19:04 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:05 -0800
+
+
+Started DELETE "/articles/81" for 169.231.13.155 at 2015-01-25 19:19:12 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QErIJ44DB7IM+4uTXhEu2KHaNlBObmYHOWWREPUmUPJ0xnBIMpAYFqaDU082JvJO4mY2X4pIPPq0e0NNqu5srw==", "id"=>"81"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 81]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 81]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:19:12 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/82" for 169.231.13.155 at 2015-01-25 19:19:15 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QErIJ44DB7IM+4uTXhEu2KHaNlBObmYHOWWREPUmUPJ0xnBIMpAYFqaDU082JvJO4mY2X4pIPPq0e0NNqu5srw==", "id"=>"82"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 82]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 82]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:19:15 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:25 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:35 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 19:19:35 -0800
+
+
+Started DELETE "/articles/85" for 169.231.13.155 at 2015-01-25 19:19:53 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCTbDnv5PQ7F0G/5E18H7DU1nknhb+F+W8I2Jkiog3+cqGNhx2oiqm+otyV7aNt6domeRiVJu4PW3OR7F2C/Ig==", "id"=>"85"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 85]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 85]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:19:53 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/86" for 169.231.13.155 at 2015-01-25 19:19:55 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCTbDnv5PQ7F0G/5E18H7DU1nknhb+F+W8I2Jkiog3+cqGNhx2oiqm+otyV7aNt6domeRiVJu4PW3OR7F2C/Ig==", "id"=>"86"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 86]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 86]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started DELETE "/articles/89" for 169.231.13.155 at 2015-01-25 19:19:56 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCTbDnv5PQ7F0G/5E18H7DU1nknhb+F+W8I2Jkiog3+cqGNhx2oiqm+otyV7aNt6domeRiVJu4PW3OR7F2C/Ig==", "id"=>"89"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 89]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 89]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 9937ms (ActiveRecord: 2.5ms)
+
+
+Started DELETE "/articles/91" for 169.231.13.155 at 2015-01-25 19:20:06 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCTbDnv5PQ7F0G/5E18H7DU1nknhb+F+W8I2Jkiog3+cqGNhx2oiqm+otyV7aNt6domeRiVJu4PW3OR7F2C/Ig==", "id"=>"91"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 91]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 91]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started DELETE "/articles/94" for 169.231.13.155 at 2015-01-25 19:20:16 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCTbDnv5PQ7F0G/5E18H7DU1nknhb+F+W8I2Jkiog3+cqGNhx2oiqm+otyV7aNt6domeRiVJu4PW3OR7F2C/Ig==", "id"=>"94"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 94]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.5ms)
+
+
+Started DELETE "/articles/96" for 169.231.13.155 at 2015-01-25 19:20:17 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCTbDnv5PQ7F0G/5E18H7DU1nknhb+F+W8I2Jkiog3+cqGNhx2oiqm+otyV7aNt6domeRiVJu4PW3OR7F2C/Ig==", "id"=>"96"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 96]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:20:17 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:18 -0800
+
+
+Started DELETE "/articles/80" for 169.231.13.155 at 2015-01-25 19:20:22 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"80"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 80]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:20:22 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/88" for 169.231.13.155 at 2015-01-25 19:20:30 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"88"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 88]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 88]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.5ms)
+
+
+Started DELETE "/articles/90" for 169.231.13.155 at 2015-01-25 19:20:30 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"90"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 90]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 90]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 2801ms (ActiveRecord: 6.1ms)
+
+
+Started DELETE "/articles/92" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"92"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 92]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 92]]
+  [1m[35m (30.6ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 129ms (ActiveRecord: 31.0ms)
+
+
+Started DELETE "/articles/93" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"93"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 93]]
+  [1m[35m (76.1ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 78ms (ActiveRecord: 76.5ms)
+
+
+Started DELETE "/articles/95" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"95"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 95]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 91ms (ActiveRecord: 8.4ms)
+
+
+Started DELETE "/articles/97" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rf+bWTqVf2Y/Vd1yP5yjU/Z4V49tnoooRsIR9aK2Nn2ZcyM2hgZgwpUtBa5Xq3/FtcRXgKm40NXL3MOo/X4KIA==", "id"=>"97"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 97]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 97]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://169.231.13.155:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (65.2ms)
+Completed 200 OK in 124ms (Views: 122.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.13.155 at 2015-01-25 19:20:33 -0800
+
+
+Started GET "/articles/new" for 169.231.13.155 at 2015-01-25 19:20:36 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 19:21:18 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 19:21:18 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 19:21:18 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.214 at 2015-01-25 19:21:18 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:18 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:18 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:23 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:23 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:23 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:23 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:23 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.214 at 2015-01-25 19:21:23 -0800
+
+
+Started GET "/articles/new" for 169.231.47.214 at 2015-01-25 19:22:30 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 64.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 19:22:30 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.47.214 at 2015-01-25 19:22:30 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.47.214 at 2015-01-25 19:22:30 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:30 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:30 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:33 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:33 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:33 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:33 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:33 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.47.214 at 2015-01-25 19:22:33 -0800
+
+
+Started GET "/articles/new" for 169.231.44.171 at 2015-01-25 19:25:39 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.44.171 at 2015-01-25 19:25:39 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:39 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.44.171 at 2015-01-25 19:25:39 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:39 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:39 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:45 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:45 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:46 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 169.231.44.171 at 2015-01-25 19:25:46 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:46 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 169.231.44.171 at 2015-01-25 19:25:46 -0800
+
+
+Started GET "/articles/new" for 66.249.84.183 at 2015-01-25 19:25:47 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 66.249.84.183 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 66.249.84.171 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 66.249.84.183 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 66.249.84.171 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 66.249.84.183 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 66.249.84.183 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 66.249.84.177 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 66.249.84.171 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 66.249.84.183 at 2015-01-25 19:25:56 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 66.249.84.177 at 2015-01-25 19:26:06 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 66.249.84.183 at 2015-01-25 19:26:06 -0800
+
+
+Started GET "/articles/new" for 66.249.84.177 at 2015-01-25 20:38:54 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 225ms (Views: 214.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 66.249.84.171 at 2015-01-25 20:41:21 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 66.249.84.171 at 2015-01-25 20:41:44 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 66.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:44:23 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:23 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:23 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:23 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:23 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:23 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:29 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:30 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:30 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:30 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:30 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:30 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:30 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:44:34 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:44:35 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:44:59 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:45:00 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:46:45 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:46:45 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:46:45 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:46:45 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:45 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:45 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:49 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:49 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:49 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:49 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:49 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:46:49 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:48:42 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:48:42 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:48:42 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:48:43 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:43 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:43 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:46 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:46 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:46 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:46 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:46 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:48:46 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:50:07 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:50:07 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:50:07 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:50:07 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:07 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:07 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:15 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:15 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:15 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:15 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:15 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:50:15 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:52:52 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:52:52 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:52:52 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:52:52 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:52:52 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:52:52 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:53:02 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:53:02 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:53:02 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:53:02 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:53:02 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:53:02 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 20:56:38 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:56:39 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 20:56:39 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 20:56:39 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:40 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:40 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:46 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:46 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:46 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:46 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:46 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 20:56:46 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 21:02:09 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 21:02:09 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 21:02:09 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 21:02:10 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:10 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:10 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:11 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:11 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:11 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:11 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:11 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 21:02:11 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 21:15:03 -0800
+Processing by ArticlesController#new as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 21:15:03 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 21:15:03 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 21:15:03 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:03 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:03 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:07 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:07 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:07 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:07 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:07 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:07 -0800
+
+
+Started GET "/articles/new" for 166.170.51.10 at 2015-01-25 21:15:43 -0800
+Processing by ArticlesController#new as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 21:15:43 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 166.170.51.10 at 2015-01-25 21:15:43 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 166.170.51.10 at 2015-01-25 21:15:43 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:43 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:43 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:49 -0800
+
+
+Started GET "/assets/accelerometer-0159d8436b7560c4953c110c520c0e8f.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:49 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:49 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:49 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:49 -0800
+
+
+Started GET "/assets/application-57695861d7044381c249eb8bcaa920b1.js?body=1" for 166.170.51.10 at 2015-01-25 21:15:49 -0800
