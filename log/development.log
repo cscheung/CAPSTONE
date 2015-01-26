@@ -6188,3 +6188,346 @@ Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 16
 
 
 Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 169.231.44.89 at 2015-01-23 10:35:32 -0800
+
+
+Started GET "/" for 192.168.0.100 at 2015-01-25 21:47:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1047ms (Views: 1038.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 21:47:50 -0800
+
+
+Started GET "/articles" for 192.168.0.100 at 2015-01-25 21:47:55 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for 192.168.0.100 at 2015-01-25 21:47:57 -0800
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 192.168.0.100 at 2015-01-25 21:50:19 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yLmx6ZJ38scP/rZ6PIXLY8vyiTpqBnPA1GI86pWHA1GO4eIAj3WPUUH/dOWMUbIBVQiG0VhzQDUtA0OrNtGkJQ==", "article"=>{"title"=>"2015:01:25:21:48:55", "text"=>"\r\naccelerometer_x: -0.1\r\naccelerometer_y: 0\r\naccelerometer_z: -9.8\r\naccelerometer_x: -0.1\r\ngyroscope_alpha: 26.4\r\ngyroscope_beta: 0.2\r\ngyroscope_gamma: -0.9"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "2015:01:25:21:48:55"], ["text", "\r\naccelerometer_x: -0.1\r\naccelerometer_y: 0\r\naccelerometer_z: -9.8\r\naccelerometer_x: -0.1\r\ngyroscope_alpha: 26.4\r\ngyroscope_beta: 0.2\r\ngyroscope_gamma: -0.9"], ["created_at", "2015-01-26 05:50:19.491871"], ["updated_at", "2015-01-26 05:50:19.491871"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.0.101:3000/articles/6
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/6" for 192.168.0.100 at 2015-01-25 21:50:19 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 55.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/6/edit" for 192.168.0.100 at 2015-01-25 21:50:41 -0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered articles/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 192.168.0.100 at 2015-01-25 21:50:48 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/application-a666d9944fdf105b3aeed99e0e6e3d02.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/assets/gyro-7b575b151bbdc4cf2fd5cbd0380191b0.js?body=1" for 192.168.0.100 at 2015-01-25 22:42:56 -0800
+
+
+Started GET "/articles/6/edit" for 192.168.0.100 at 2015-01-25 22:42:58 -0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered articles/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/6/edit" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered articles/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/application-a666d9944fdf105b3aeed99e0e6e3d02.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/assets/gyro-7b575b151bbdc4cf2fd5cbd0380191b0.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:00 -0800
+
+
+Started GET "/articles" for 192.168.0.100 at 2015-01-25 22:43:07 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 192.168.0.100 at 2015-01-25 22:43:11 -0800
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/gyro-7b575b151bbdc4cf2fd5cbd0380191b0.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/assets/application-a666d9944fdf105b3aeed99e0e6e3d02.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:33 -0800
+
+
+Started GET "/articles" for 192.168.0.100 at 2015-01-25 22:43:36 -0800
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 192.168.0.100 at 2015-01-25 22:43:42 -0800
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n8WrWyQDR8XbQomX8pT1jRdcBChx+HGfESMdRA2nuyTZnfiyOQE6U5VDSwhCQIzviaYLw0ONQmroQmIFrvEcUA==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["text", ""], ["created_at", "2015-01-26 06:43:53.492333"], ["updated_at", "2015-01-26 06:43:53.492333"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://192.168.0.101:3000/articles/7
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/articles/7" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/application-a666d9944fdf105b3aeed99e0e6e3d02.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/gyro-7b575b151bbdc4cf2fd5cbd0380191b0.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:43:53 -0800
+
+
+Started GET "/articles" for 192.168.0.100 at 2015-01-25 22:43:59 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 192.168.0.100 at 2015-01-25 22:44:02 -0800
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/accelerometer-083dbaa08a48abff88fc0c6732819dc2.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/gyro-d68ca96e113d076e5aca4173189bfefc.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
+
+
+Started GET "/assets/application-940a6f05cd51360d43a49a4c972cdd3a.js?body=1" for 192.168.0.100 at 2015-01-25 22:44:46 -0800
